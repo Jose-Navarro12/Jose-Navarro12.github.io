@@ -27,24 +27,21 @@ aside {
     color: white;
     border: 2px solid black;
     float: right;
-    width: 55%;
+    width: 45%;
 }
 
 footer {
     clear: both;
     text-align: center;
     margin: 0em;
-    padding: 1em;
-    font-size: 500%
-    
-
+    padding: 0em;
 }
 
 header {
     border: 3px solid black;
     background-color: green;
     font-family: cursive;
-    height: 110px;
+    height: 150px;
     padding: 0;
 }
 
@@ -93,6 +90,7 @@ h1 {
     color: darkblue;
     text-align: center;
     background-color: black;
+    font-size: 400%
 
 
     
