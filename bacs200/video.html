@@ -1,22 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>BACS 200 non-profit page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="video.css">
 </head>
-<body>
-    <h1>My Video</h1>
-    <iframe
-     width="723"
 
-     height="744"
+<body class="bg-light m-4">
+    <header class="bg-dark">
+        <div class="containerfluid?">
+            <div class="row align-items-center bg-black">
+                <div class="col">
+                    <img src="image/make-a-wish.png" alt="make a wish foundation">
+                </div>
+                <div class="col-sm text-center">
+                    <a href="https://secure2.wish.org/site/SPageServer?pagename=donate_today&chid=100-000" class="btn btn-primary text-dark border border-dark navyblue">
+                        <h1>DONATE NOW!</h1>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <!-- SLIDER WITH CONTROLS -->
+        <div id="slider2" class="carousel slide mb-3" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block img-fluid w-100" src="image/make%20a%20wish%203.jpg" alt="Make-A" width="500" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid w-100" src="image/make%20a%20wish%202.jpg" alt="make a wish children" width="500" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid w-100" src="image/make%20a%20wish%201.jpg" alt="Make-A" width="500" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid w-100" src="image/make%20a%20wish%204.jpg" alt="donate" width="500" height="500">
+                </div>
+            </div>
 
-     src="https://www.youtube.com/embed/SQXnJWG7P58"
+            <!-- CONTROLS -->
+            <a href="#slider2" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
 
-      frameborder="0"
+            <a href="#slider2" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    <script>
+        $('.carousel').carousel({
+            interval: 2000,
+            keyboard: true,
+            pause: 'hover',
+            wrap: true
+        });
 
-       allowfullscreen></iframe>
-</body>
-</html>
+    </script>
+
+    <div class="container-fluid">
+        <header>
+            <h1 class="display-2 border border-light text-dark bg-primary p-2 text-center rounded text-center text-info">Help the dreams of children come true!</h1>
+        </header>
+
+        <hr class="solid">
+    </div>
+    <div class="mb-4">
+
+        <h2 class="text-priamary rounded font-weight-bold text-center text-info"> Make a Change!</h2>
+
+        <p class="font-italic lead text-center">
+            Donate and change the life of children with critical illnesses by fulfilling their wishes.
+        </p>
+
+
+        <hr class="solid">
+    </div>
+    <div class="mb-4">
+        <h2 class="text-primary rounded font-weight-bold text-center text-info"> Our Mission</h2>
+        <p class="text-dark p-2 mt-4 mb-0 rounded text-arial"> This one belief guides us in everything we do at Make-A-Wish. It inspires us to grant life-changing wishes for children going through so much. It compels us to be creative in exceeding the expectations of every wish kid. It drives us to make our donated resources go as far as possible. Most of all, it's the founding principle of our vision to grant the wish of every eligible child.</p>
+
+        <hr class="solid">
+    </div>
+    <div class="mb-4">
+
+        <h1 class="text-info rounded font-weight-bold text-center text-info">Get Involved</h1>
+        <div class="accordion" id="accordionstyle">
+            <div class="card">
+                <div class="card-header bg-dark" id="headingOne">
+                    <h2 class="text-light mb-0">
+                        <button class="btn btn-link text-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Refer a child
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        What makes a child eligable for the Make-A-Wish foundation? <a href="https://wish.org/refer-a-child">Refer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header bg-dark" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed text-light" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How can you get involved?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Volunteer to help raise money to help the dreams of our children come true. <a href="https://wish.org/volunteer">Volunteer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header bg-dark" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Donate NOW!
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Donate your time or money today to help change the life of a child going through a life or death situation!<a href="https://secure2.wish.org/site/SPageServer?pagename=donate_today&chid=100-000"> Donate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="solid">
+    </div>
+    <div class="mb-4"></div>
+
+    <h2 class="text-primary rounded font-weight-bold text-center text-info"> Contact Info: Make-A-Wish America</h2>
+    <table class="table table-striped">
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"> Address:</th>
+                <td>1702 E. Highland Ave, Suite 400 Phoenix, AZ 85016 USA</td>
+            </tr>
+            <tr>
+                <th scope="row">Phone Number:</th>
+                <td>602.279.9474</td>
+            </tr>
+            <tr>
+                <th scope="row">Email:</th>
+                <td>mawfa@wish.org</td>
+            </tr>
+        </tbody>
+    </table>
+     <footer class="bg-white">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark mt-3">
+            <a class="navbar-brand" id="Video" href="#">Video</a>
+        </nav>
+
+        <div class="container bg-white text-light">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card bg-light text-dark border border-dark my-3 mb-0 w-50%">
+                        <div class="card-header text-white p-3 navyblue">
+                            <h2>Video</h2>
+                        </div>
+
+                        <div class="card-body height text-center p-1 embed-responsive">
+                         <iframe width="1280" height="720" src="https://www.youtube.com/embed/VH2u1UZYVFg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card bg-light text-dark border border-dark my-3 mb-0 w-50%">
+                        <div class="card-header text-white p-3 navyblue">
+                            <h2>Script</h2>
+                        </div>
+
+                        <div class="card-body scroll">
+                            <p class="text-primary text-center">Strategies Used:</p>
+                            <p>
+                                <span class="text-danger">Personal experiences:</span>
+                                The most common strategy used by the Make-A-Wish foundation is showing the personal experiences of childeren with critical illnesses. This is very effective because is shows the public how once wish can make a difference in a childs life and how it motivate
+                            </p>
+
+                            <p class="text-primary text-center">Getting Involved:</p>
+                            <p>
+                                <span class="text-danger">Donate:</span>
+                                You can get involved by donating to the Make-A-Wish Foundation. This will help pay for wishes of critically ill children come true and give them motivation to fight and live!
+                            </p>
+
+                            <p>
+                                <span class="text-danger">Donate you time: </span>
+                                By donating your time, you are helping someone that really needs support in their life decide the wish they never thought would come true. You can also help set up events for these childeren. If a hands on experience does not catch your attention, you can always work in the office and hel take phone calls or other tasks.
+                            </p>
+
+                            <p class="text-primary text-center">Contact Information:</p>
+                            <p>
+                                <span class="text-danger">Offices:</span>
+                                1702 E. Highland Ave, Suite 400 Phoenix, AZ 85016 USA
+                            </p>
+
+                            <p>
+                                <span class="text-danger">Phone Number:</span>
+                                602.279.9474
+                            </p>
+
+                            <p>
+                                <span class="text-danger">Email:</span>
+                                mawfa@wish.org
+                            </p>
+
+                            <p class="text-primary text-center">Personal Experience:</p>
+                            <p>
+                                <span class="text-danger">Middle School:</span>
+                                I personlly do not have any experience with the Make-A-Wish foundation, but I do plan on participating in events or volunteering in the future. I want to be able to make a change in childrens lives and let them know that they are not alone.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </footer>
+    <footer>
+        <a href="https://twitter.com/MakeAWish"> Twitter,</a>
+        <a href="https://www.facebook.com/makeawish"> Facebook,</a>
+        <a href="https://www.instagram.com/makeawishamerica/"> Instagram,</a>
+        <a href="https://www.youtube.com/user/MakeAWishFoundation"> Youtube</a>
+    </footer>
